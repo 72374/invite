@@ -14,4 +14,4 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Test interface
-      run: npx start-server-and-test start 3000 test
+      run: WAIT_ON_INTERVAL=600000 npx start-server-and-test start http://localhost:3000 test
